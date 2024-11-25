@@ -8,7 +8,7 @@ export const fetchProducts = async () => {
     const response = await axios.get(`${baseURL}/products`);
     return response.data;
   } catch (error) {
-    throw new Error('Failed to fetch products');
+    throw new Error('Failed to fetch products' );
   }
 };
 

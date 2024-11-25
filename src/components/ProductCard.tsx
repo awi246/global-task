@@ -21,7 +21,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => (
     />
     <h2 className="text-lg font-semibold mt-2">{product.name}</h2>
     <p className="text-textBody">{product.price}</p>
-    <Link href={`/products/detail/${product.id}`}>
+    <Link href={`/products/productDetail?id=${product.id}`}>
       <button className="mt-2 bg-accent text-white px-4 py-2 rounded">View</button>
     </Link>
   </div>
