@@ -73,7 +73,7 @@ const Home = ({ products }: { products: Product[] }) => {
   return (
     <>
       <OGTags
-        title="Product Showcase"
+        title="GLOBAL SQUARE"
         description="Browse our products"
         image="/assets/Global Square.jpeg"
       />
