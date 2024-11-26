@@ -4,349 +4,399 @@
     "name": "NodePulse Pro",
     "price": "$10.00",
     "image": "/assets/node.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 2,
     "name": ".NET Forge",
     "price": "$20.00",
     "image": "/assets/net.png",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 3,
     "name": "ExpressStream",
     "price": "$30.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 4,
     "name": ".NET Horizon",
     "price": "$40.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 5,
     "name": "AsyncWave",
     "price": "$50.00",
     "image": "/assets/node.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 5
   },
   {
     "id": 6,
     "name": ".NET Quantum",
     "price": "$60.00",
     "image": "/assets/net.png",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 7,
     "name": "EventForge",
     "price": "$70.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 8,
     "name": ".NET Apex",
     "price": "$80.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 9,
     "name": "StreamlineJS",
     "price": "$90.00",
     "image": "/assets/node.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 10,
     "name": ".NET Nexus",
     "price": "$100.00",
     "image": "/assets/net.png",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 11,
     "name": "MicroNode",
     "price": "$110.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 12,
     "name": ".NET Synergy",
     "price": "$120.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 13,
     "name": "NodeFusion",
     "price": "$130.00",
     "image": "/assets/net.png",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 5
   },
   {
     "id": 14,
     "name": ".NET Catalyst",
     "price": "$140.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 15,
     "name": "AsyncOrbit",
     "price": "$150.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 5
   },
   {
     "id": 16,
     "name": ".NET Vortex",
     "price": "$160.00",
     "image": "/assets/net.png",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 17,
     "name": "EventSphere",
     "price": "$170.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 18,
     "name": ".NET Pinnacle",
     "price": "$180.00",
     "image": "/assets/net.png",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 19,
     "name": "StreamCore",
     "price": "$190.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 20,
     "name": ".NET HorizonX",
     "price": "$200.00",
     "image": "/assets/net.png",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 21,
     "name": "NodeWave",
     "price": "$210.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 22,
     "name": ".NET Fusion",
     "price": "$220.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 23,
     "name": "ExpressPulse",
     "price": "$230.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 24,
     "name": ".NET Ascend",
     "price": "$240.00",
     "image": "/assets/net.png",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 25,
     "name": "AsyncStream",
     "price": "$250.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 5
   },
   {
     "id": 26,
     "name": ".NET Elevate",
     "price": "$260.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 27,
     "name": "EventPulse",
     "price": "$270.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 28,
     "name": ".NET Innovate",
     "price": "$280.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 29,
     "name": "StreamFlex",
     "price": "$290.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 30,
     "name": ".NET Momentum",
     "price": "$300.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 31,
     "name": "NodeAscend",
     "price": "$310.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 32,
     "name": ".NET Velocity",
     "price": "$320.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 33,
     "name": "ExpressFlex",
     "price": "$330.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 34,
     "name": ".NET SynergyX",
     "price": "$340.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 35,
     "name": "AsyncForge",
     "price": "$350.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 5
   },
   {
     "id": 36,
     "name": ".NET ApexPro",
     "price": "$360.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 37,
     "name": "EventFusion",
     "price": "$370.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 38,
     "name": ".NET HorizonPro",
     "price": "$380.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 39,
     "name": "StreamInnovate",
     "price": "$390.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 40,
     "name": ".NET VortexX",
     "price": "$400.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 41,
     "name": "NodeVelocity",
     "price": "$410.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 42,
     "name": ".NET ElevatePro",
     "price": "$420.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 43,
     "name": "ExpressSynergy",
     "price": "$430.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 44,
     "name": ".NET PinnacleX",
     "price": "$440.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 45,
     "name": "AsyncQuantum",
     "price": "$450.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 5
   },
   {
     "id": 46,
     "name": ".NET CatalystPro",
     "price": "$460.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 4
   },
   {
     "id": 47,
     "name": "EventNexus",
     "price": "$470.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 3
   },
   {
     "id": 48,
     "name": ".NET HorizonMax",
     "price": "$480.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   },
   {
     "id": 49,
     "name": "StreamSynergy",
     "price": "$490.00",
     "image": "/assets/Global Square.jpeg",
-    "category": "Node.js Products"
+    "category": "Node.js Products",
+    "rating": 4
   },
   {
     "id": 50,
     "name": ".NET MomentumX",
     "price": "$500.00",
     "image": "/assets/Global Square.jpeg",
-    "category": ".NET Products"
+    "category": ".NET Products",
+    "rating": 5
   }
 ]

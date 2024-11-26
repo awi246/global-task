@@ -12,6 +12,7 @@ interface Product {
   price: string;
   image: string;
   category: string;
+  rating: number; 
 }
 
 const PRODUCTS_PER_PAGE = 6;
