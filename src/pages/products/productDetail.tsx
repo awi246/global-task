@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import OGTags from '../../components/OGTags';
@@ -62,6 +63,7 @@ export async function getServerSideProps(context: any) {
     const product = await fetchProductById(Number(id));
     return { props: { product: product || null } };
   } catch (error) {
+    console.error(error);
     return { props: { product: null } };
   }
 }
