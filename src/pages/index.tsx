@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 import OGTags from '../components/OGTags';
-import { Pagination } from 'antd';
+import ReactPaginate from 'react-paginate'; 
 import { fetchProducts } from '../utils/api';
 
 interface Product {
@@ -19,8 +19,8 @@ const PRODUCTS_PER_PAGE = 6;
 const Home = ({ products }: { products: Product[] }) => {
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<Product[]>(products);
-  const [nodePage, setNodePage] = useState(1); 
-  const [dotnetPage, setDotnetPage] = useState(1);
+  const [nodePage, setNodePage] = useState(0); 
+  const [dotnetPage, setDotnetPage] = useState(0);
 
   useEffect(() => {
     if (search.trim() === '') {
@@ -35,8 +35,8 @@ const Home = ({ products }: { products: Product[] }) => {
       setFiltered(filteredProducts);
     }
 
-    setNodePage(1);
-    setDotnetPage(1);
+    setNodePage(0);
+    setDotnetPage(0);
   }, [search, products]);
 
   const nodeProducts = filtered.filter(
@@ -50,23 +50,23 @@ const Home = ({ products }: { products: Product[] }) => {
   const dotnetTotalPages = Math.ceil(dotnetProducts.length / PRODUCTS_PER_PAGE);
 
   const currentNodeProducts = nodeProducts.slice(
-    (nodePage - 1) * PRODUCTS_PER_PAGE,
-    nodePage * PRODUCTS_PER_PAGE
+    nodePage * PRODUCTS_PER_PAGE,
+    (nodePage + 1) * PRODUCTS_PER_PAGE
   );
 
   const currentDotnetProducts = dotnetProducts.slice(
-    (dotnetPage - 1) * PRODUCTS_PER_PAGE,
-    dotnetPage * PRODUCTS_PER_PAGE
+    dotnetPage * PRODUCTS_PER_PAGE,
+    (dotnetPage + 1) * PRODUCTS_PER_PAGE
   );
 
-  const handleNodePageChange = (page: number) => {
-    setNodePage(page);
+  const handleNodePageChange = ({ selected }: { selected: number }) => {
+    setNodePage(selected);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleDotnetPageChange = (page: number) => {
-    setDotnetPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+  const handleDotnetPageChange = ({ selected }: { selected: number }) => {
+    setDotnetPage(selected);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -98,13 +98,28 @@ const Home = ({ products }: { products: Product[] }) => {
                 </div>
                 {nodeTotalPages > 1 && (
                   <div className="flex justify-center mt-6">
-                    <Pagination
-                      current={nodePage}
-                      total={nodeProducts.length}
-                      pageSize={PRODUCTS_PER_PAGE}
-                      onChange={handleNodePageChange}
-                      showSizeChanger={false}
-                      className="ant-pagination"
+                    <ReactPaginate
+                      previousLabel="← Previous"
+                      nextLabel="Next →"
+                      breakLabel="..."
+                      breakClassName="hidden" 
+                      pageCount={nodeTotalPages}
+                      marginPagesDisplayed={2}
+                      pageRangeDisplayed={3}
+                      onPageChange={handleNodePageChange}
+                      containerClassName="flex space-x-2"
+                      pageClassName=""
+                      pageLinkClassName="px-3 py-2 border border-gray-300 rounded hover:bg-gray-100"
+                      previousClassName=""
+                      previousLinkClassName={`px-3 py-2 border border-gray-300 rounded hover:bg-gray-100 ${
+                        nodePage === 0 ? 'cursor-not-allowed opacity-50' : ''
+                      }`}
+                      nextClassName=""
+                      nextLinkClassName={`px-3 py-2 border border-gray-300 rounded hover:bg-gray-100 ${
+                        nodePage === nodeTotalPages - 1 ? 'cursor-not-allowed opacity-50' : ''
+                      }`}
+                      activeLinkClassName="bg-blue-600 text-white border-blue-600"
+                      disabledClassName=""
                     />
                   </div>
                 )}
@@ -125,13 +140,28 @@ const Home = ({ products }: { products: Product[] }) => {
                 </div>
                 {dotnetTotalPages > 1 && (
                   <div className="flex justify-center mt-6">
-                    <Pagination
-                      current={dotnetPage}
-                      total={dotnetProducts.length}
-                      pageSize={PRODUCTS_PER_PAGE}
-                      onChange={handleDotnetPageChange}
-                      showSizeChanger={false}
-                      className="ant-pagination"
+                    <ReactPaginate
+                      previousLabel="← Previous"
+                      nextLabel="Next →"
+                      breakLabel="..."
+                      breakClassName="hidden" 
+                      pageCount={dotnetTotalPages}
+                      marginPagesDisplayed={2}
+                      pageRangeDisplayed={3}
+                      onPageChange={handleDotnetPageChange}
+                      containerClassName="flex space-x-2"
+                      pageClassName=""
+                      pageLinkClassName="px-3 py-2 border border-gray-300 rounded hover:bg-gray-100"
+                      previousClassName=""
+                      previousLinkClassName={`px-3 py-2 border border-gray-300 rounded hover:bg-gray-100 ${
+                        dotnetPage === 0 ? 'cursor-not-allowed opacity-50' : ''
+                      }`}
+                      nextClassName=""
+                      nextLinkClassName={`px-3 py-2 border border-gray-300 rounded hover:bg-gray-100 ${
+                        dotnetPage === dotnetTotalPages - 1 ? 'cursor-not-allowed opacity-50' : ''
+                      }`}
+                      activeLinkClassName="bg-blue-600 text-white border-blue-600"
+                      disabledClassName=""
                     />
                   </div>
                 )}
