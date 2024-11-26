@@ -16,7 +16,6 @@ const Navbar = () => {
 
   return (
     <nav className="bg-primary p-4 flex justify-between items-center relative shadow-md">
-      {/* Logo and Brand Name */}
       <Link href="/">
         <div className="flex items-center cursor-pointer">
           <Image 
@@ -30,7 +29,6 @@ const Navbar = () => {
         </div>
       </Link>
 
-      {/* Desktop Navigation Links */}
       <div className="hidden md:flex space-x-6">
         <Link 
           href="/" 
@@ -62,7 +60,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Mobile Menu Button */}
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -77,7 +74,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation Links */}
       <div
         className={`absolute top-16 left-0 w-full bg-primary text-white flex flex-col items-center space-y-4 py-4 md:hidden transition-all duration-500 ease-in-out ${
           isOpen
@@ -99,20 +95,8 @@ const Navbar = () => {
           <FaInfoCircle className="mr-2" />
           About
         </Link>
-        <Link 
-          href="/" 
-          className="flex items-center text-white hover:text-accent transition-colors duration-300"
-        >
-          <FaServicestack className="mr-2" />
-          Services
-        </Link>
-        <Link 
-          href="/" 
-          className="flex items-center text-white hover:text-accent transition-colors duration-300"
-        >
-          <FaEnvelope className="mr-2" />
-          Contact
-        </Link>
+
+   
       </div>
     </nav>
   );
