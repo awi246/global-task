@@ -118,7 +118,7 @@ const Home = ({ products }: { products: Product[] }) => {
             <h2 className="text-2xl font-semibold mb-6 text-accent">.NET Products</h2>
             {currentDotnetProducts.length > 0 ? (
               <>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                   {currentDotnetProducts.map((product) => (
                     <ProductCard key={product.id} product={product} />
                   ))}
